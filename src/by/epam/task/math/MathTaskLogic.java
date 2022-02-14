@@ -32,7 +32,6 @@ public class MathTaskLogic {
             if (array[i] < min) {
                 min = array[i];
             }
-
         }
         return (max+min);
     }
