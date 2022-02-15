@@ -9,7 +9,7 @@ public class MathTaskView {
     }
 
     public void showArray(double[] array) {
-        System.out.println(Arrays.toString(array));
+        System.out.println("result of this task is: " + Arrays.toString(array));
     }
 
     public void showDouble(double value) {

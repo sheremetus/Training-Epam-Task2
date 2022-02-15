@@ -7,20 +7,23 @@ public class MathController {
         MathTaskLogic calc = new MathTaskLogic();
         MathTaskView view = new MathTaskView();
 
-       // Task 4
-        double x = input.inputDoubleValue("Input double value");
-        double y = input.inputDoubleValue("Input double value");
-        boolean result4 = calc.mathTask4(x, y);
+        String message1 = "Input double value";
+        String message2 = "Input double array with size: ";
+
+        // Task 4
+        double x = input.inputDoubleValue(message1);
+        double y = input.inputDoubleValue(message1);
+        boolean result4 = calc.isDotInShadedArea(x, y);
         view.showBooleanResult(result4);
 
         // Task 5
-        double[] array5 = input.inputDoubleArray(3,"Input double array with size: ");
-        double[] result5 = calc.mathTask5(array5);
+        double[] array5 = input.inputDoubleArray(3, message2, message1);
+        double[] result5 = calc.negativeToFourthPositiveToSecond(array5);
         view.showArray(result5);
 
         // Task 6
-        double[] array6 = input.inputDoubleArray(3,"Input double array with size: ");
-        double result6 = calc.mathTask6(array6);
+        double[] array6 = input.inputDoubleArray(3, message2, message1);
+        double result6 = calc.sumMinAndMax(array6);
         view.showDouble(result6);
 
     }

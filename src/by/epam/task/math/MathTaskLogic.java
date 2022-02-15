@@ -4,12 +4,12 @@ import static java.lang.Math.pow;
 
 public class MathTaskLogic {
 
-    public boolean mathTask4(double x, double y) {
+    public boolean isDotInShadedArea(double x, double y) {
 
         return ((y > 0 && y <= 4 && x <= 2 && x >= -2) || (y <= 0 && y >= -3 && x <= 4 && x >= -4));
     }
 
-    public double[] mathTask5(double[] array) {
+    public double[] negativeToFourthPositiveToSecond(double[] array) {
 
         for (int i = 0; i < 3; i++) {
             if (array[i] >= 0) {
@@ -21,7 +21,7 @@ public class MathTaskLogic {
         return array;
     }
 
-    public double mathTask6(double[] array){
+    public double sumMinAndMax(double[] array) {
         double min = Double.MAX_VALUE;
         double max = Double.MIN_VALUE;
 
@@ -33,7 +33,7 @@ public class MathTaskLogic {
                 min = array[i];
             }
         }
-        return (max+min);
+        return (max + min);
     }
 
 
